@@ -3,7 +3,7 @@ package hello;
 import org.joda.time.LocalTime;
 
 /**
- * 以下で提示されているサンプルクラス．
+ * 以下で提示されているサンプルクラス．<br>
  * https://qiita.com/marutanseijin/items/b2897539ea94d67739e6
  */
 public class HelloWorld {

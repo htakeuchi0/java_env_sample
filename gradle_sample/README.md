@@ -84,3 +84,9 @@ $ gradle test
 $ gradle clean
 ```
 
+Javadocの生成．    
+`build/docs/javadocs/index.html`をブラウザで開いて読む．
+
+```
+$ gradle javadoc
+```
