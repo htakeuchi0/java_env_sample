@@ -58,7 +58,7 @@ $ mkdir -p src/java/test/hello
 
 ## つかいかた
 
-ビルドと実行．
+ビルドと実行．`make` でもよい．
 
 ```
 $ gradle build
@@ -72,20 +72,21 @@ $ gradle build
 $ java -jar build/libs/gradle_sample.jar 
 ```
 
-テスト．
+テスト．`make test` でもよい．
 
 ```
 $ gradle test
 ```
 
-初期化．
+初期化．`make clean` でもよい．
 
 ```
 $ gradle clean
 ```
 
 Javadocの生成．    
-`build/docs/javadocs/index.html`をブラウザで開いて読む．
+`build/docs/javadocs/index.html`をブラウザで開いて読む．    
+`make docs` でもよい．
 
 ```
 $ gradle javadoc
