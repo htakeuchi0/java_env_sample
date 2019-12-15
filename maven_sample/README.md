@@ -51,25 +51,26 @@ $ mvn archetype:generate -DinteractiveMode=false -DgroupId=hello -DartifactId=ma
 
 ## つかいかた
 
-ビルドと実行．
+ビルドと実行．`make` でもよい．
 
 ```
 $ mvn package
 $ java -jar target/maven_sample-1.0-jar-with-dependencies.jar 
 ```
 
-テスト．
+テスト．`make test` でもよい．
 ```
 $ mvn test
 ```
 
-初期化．
+初期化．`make clean` でもよい．
 ```
 $ mvn clean
 ```
 
 Javadocの生成．    
-`target/site/apidocs/index.html`をブラウザで開いて読む．
+`target/site/apidocs/index.html`をブラウザで開いて読む．    
+`make docs` でもよい．
 ```
 $ mvn javadoc:javadoc
 ```
