@@ -1,0 +1,18 @@
+package hello;
+
+import org.joda.time.LocalTime;
+
+/**
+ * 以下で提示されているサンプルクラス．<br>
+ * https://qiita.com/marutanseijin/items/b2897539ea94d67739e6
+ */
+public class HelloWorld2 {
+  public static void main(String[] args) {
+    LocalTime currentTime = new LocalTime();
+    System.out.println("The current local time is: " + currentTime);
+
+    Greeter greeter = new Greeter();
+    System.out.println(greeter.sayHello());
+    System.out.println(greeter.sayHello());
+  }
+}

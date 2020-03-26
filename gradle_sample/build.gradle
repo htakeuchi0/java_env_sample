@@ -44,3 +44,33 @@ jar {
   }
   from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 }
+
+// HellowWorld2.classを除外したjarファイル
+task jar1(type: Jar) {
+  baseName = "test1"
+
+  from sourceSets.main.output
+  exclude("**/HelloWorld2.*")
+
+  from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+
+  manifest {
+    attributes "Main-Class" : "hello.HelloWorld"
+  }
+}
+
+// HellowWorld.classを除外したjarファイル
+task jar2(type: Jar) {
+  baseName = "test2"
+
+  from sourceSets.main.output
+  exclude("**/HelloWorld.*")
+
+  from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+
+  manifest {
+    attributes "Main-Class" : "hello.HelloWorld2"
+  }
+}
+	
+
